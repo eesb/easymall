@@ -37,10 +37,8 @@ $global = $api->JsonReader("http://103.13.122.23/~ezivouch/Voucher/banner.php");
 	$data->voucher_banner = $global["Banner"];
 
 //echo TIME_FILE;
-//*
 
 //print_r($ControllerData["module"]);
-
 switch($ControllerData["module"]){
 	case 'customer_service_center':		require_once('0/_custservice.ez'); break;
 	case 'mall':						require_once('0/_mall.ez'); break;
